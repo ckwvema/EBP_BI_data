@@ -4,10 +4,7 @@ This project contains both a Jupyter notebook and a Python script for EBP data i
 
 ## Files
 
-- `ingest_ebp_data.py` - Main Python script (recommended for production)
-- `Ingest_EBP_data.ipynb` - Jupyter notebook version
-- `test_script.py` - Test script to verify setup
-- `run_example.py` - Example usage script
+- `main.py` - Main Python script
 - `.env` - Environment configuration file
 - `requirements.txt` - Python dependencies
 
@@ -56,7 +53,7 @@ EBP_PASSWORD=your_password
 EBP_API_PREFIX=https://ebp-api-service.ebp.ckw.ch
 
 # Export Configuration
-EXPORT_BASE_PATH=/path/to/export/directory
+EXPORT_BASE_PATH=/Users/matthiasveitinger/Library/CloudStorage/OneDrive-FreigegebeneBibliotheken–CKW-Gruppe/CKW Insights - EBPD
 EXPORT_SUBDIRECTORIES=areas,contracts,buildings,utility_units,meters,managers,profiles
 
 # Data Processing Configuration
@@ -67,27 +64,15 @@ FILTER_WORDS=delete,geloescht,loeschen,lösch,ZEV EMD
 LOG_LEVEL=INFO
 ```
 
-3. Test the setup:
-```bash
-# Test that everything is configured correctly
-python test_script.py
-```
-
-4. Run the script:
+3. Run the script:
 ```bash
 # Option 1: Run the Python script directly
-python ingest_ebp_data.py
+python main.py
 
-# Option 2: Run as executable (if permissions are set)
-./ingest_ebp_data.py
-
-# Option 3: Run with virtual environment
+# Option 2: Run with virtual environment
 source venv/bin/activate
-python ingest_ebp_data.py
+python main.py
 
-# Option 4: Run the example script
-python run_example.py
-```
 
 ## Features
 
