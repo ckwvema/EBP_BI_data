@@ -50,7 +50,7 @@ pip install -r requirements.txt
 # EBP API Configuration
 EBP_USERNAME=your_username
 EBP_PASSWORD=your_password
-EBP_API_PREFIX=https://ebp-api-service.ebp.ckw.ch
+EBP_BASE_URL=https://ebp-api-service.ebp.ckw.ch
 
 # Export Configuration
 EXPORT_BASE_PATH=/Users/matthiasveitinger/Library/CloudStorage/OneDrive-FreigegebeneBibliotheken–CKW-Gruppe/CKW Insights - EBPD
